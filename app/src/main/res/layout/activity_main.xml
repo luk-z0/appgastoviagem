@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/edit_distance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Distância"
+        android:paddingTop="32dp"
+
+        />
+
+    <TextView
+        android:id="@+id/text_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_distance"
+        android:layout_centerHorizontal="true"
+        android:text="Total de quilômetos"
+        android:textSize="18sp"
+    />
+
+    <EditText
+        android:id="@+id/edit_autonomy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_price"
+        android:hint="Autonomia"
+        android:paddingTop="50dp"
+
+        />
+
+    <TextView
+        android:id="@+id/text_autonomy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_autonomy"
+        android:layout_centerHorizontal="true"
+        android:text="KMs por litro"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edit_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_distance"
+        android:hint="Preço"
+        android:paddingTop="50dp"
+
+        />
+
+    <TextView
+        android:id="@+id/text_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_price"
+        android:layout_centerHorizontal="true"
+        android:text="Preço por litro"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/text_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_autonomy"
+        android:padding="18dp"
+        android:textAlignment="center"
+        android:textSize= "18sp"
+        android:textColor="#2705ED"
+        android:text="SEU GASTO TOTAL SERÁ DE:" />
+
+    <TextView
+        android:id="@+id/text_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_message"
+        android:padding="14dp"
+        android:text="R$ 0"
+        android:textAlignment="center"
+        android:textSize="38sp" />
+
+    <Button
+        android:id="@+id/button_calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_result"
+        android:padding="18dp"
+        android:text="CALCULAR"
+        android:textSize="18sp" />
+
+</RelativeLayout>
